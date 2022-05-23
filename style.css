@@ -1,0 +1,111 @@
+body {
+    padding: 0px;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.illustration {
+    background-image: url('images/background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    width: 640px;
+    height: 959px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img {
+    width: 50px;
+    height: auto;
+}
+
+.credits {
+    font-size: 24px;
+
+}
+
+.credits a {
+    color: white;
+    text-decoration: underline;
+}
+
+.content {
+    background-color: white;
+    padding: 20px 10px 20px 10px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.info {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+form {
+    font-weight: 400;
+    padding: 20px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-header {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.fields {
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+}
+
+.col1, .col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+input[type="button"] {
+    padding: 5px 20px;
+    background-color: green;
+    color: white;
+    font-size: 22px;
+    border-radius: 5px;
+}
+
+.login a{
+    color: green;
+    text-decoration: none;
+    font-weight: 600;
+}
