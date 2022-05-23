@@ -36,8 +36,9 @@
                         <input type="text" name="first-name" id="first-name">
                         <label for="phone-number">PHONE NUMBER</label>
                         <input type="number" name="phone-number" id="phone-number">
-                        <label for="password">PASSWORD</label>
+                        <label for="password" minlength="8">PASSWORD</label>
                         <input type="password" name="password" id="password">
+                        <div class="error-message"></div>
                     </div>
                     <div class="col2">
                         <label for="last-name">LAST NAME</label>
@@ -46,6 +47,7 @@
                         <input type="email" name="email" id="email">
                         <label for="confirm-password">CONFRIM PASSWORD</label>
                         <input type="password" name="confirm-password" id="confirm-password">
+                        
                     </div>
                 </div>
                 <input type="button" value="Create Account">

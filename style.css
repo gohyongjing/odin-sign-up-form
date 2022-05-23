@@ -6,6 +6,11 @@ body {
     align-items: center;
 }
 
+@font-face {
+    font-family: "Norse Bold";
+    src: url(fonts/Norse-Bold.otf);
+}
+
 .main {
     flex: 1 1 auto;
     display: flex;
@@ -22,26 +27,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 .logo {
     margin-top: 200px;
     margin-bottom: 200px;
-    font-size: 60px;
+    padding: 10px;
+    font-size: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.logo div {
+    font-family: "Norse Bold";
+}
+
 .logo > img {
-    width: 50px;
+    width: 100px;
     height: auto;
 }
 
 .credits {
     font-size: 24px;
-
+    align-self: center;
 }
 
 .credits a {
@@ -50,7 +61,7 @@ body {
 }
 
 .content {
-    background-color: white;
+    background-color: rgb(219, 219, 219);
     padding: 20px 10px 20px 10px;
     flex: 1 1 auto;
     display: flex;
@@ -65,10 +76,10 @@ body {
 }
 
 form {
+    background-color: whitesmoke;
     font-weight: 400;
     padding: 20px;
-    border: 1px solid grey;
-    box-shadow: 2px 2px;
+    box-shadow: 2px 2px #bbbbbb;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -84,21 +95,38 @@ form {
     font-size: 16px;
     display: flex;
     gap: 20px;
+    align-self: stretch;
+    display: flex;
+    justify-content: stretch;
 }
 
 .col1, .col2 {
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+input {
+    border: 2px solid #E5E7EB;
 }
 
 input:focus {
     border: 2px solid blue;
 }
 
+input:invalid, .invalid {
+    border: 2px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
 input[type="button"] {
     padding: 5px 20px;
-    background-color: green;
+    background-color: #596D48;
     color: white;
     font-size: 22px;
     border-radius: 5px;
